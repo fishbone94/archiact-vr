@@ -71,7 +71,5 @@ public class MouseLook : MonoBehaviour {
 	void FixedUpdate(){
 		rot = transform.localEulerAngles;
 		direction = new Vector3(Mathf.Cos(rot.y) * Mathf.Sin(rot.x), Mathf.Sin(rot.y), Mathf.Cos(rot.y) * Mathf.Cos(rot.x));
-		print (rot);
-		print (direction + " Q");
 	}
 }
