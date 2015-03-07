@@ -28,7 +28,11 @@ public class MouseLook : MonoBehaviour {
 	public float minimumY = -60F;
 	public float maximumY = 60F;
 
+	public Vector3 rot;
+	public Vector3 direction;
+
 	float rotationY = 0F;
+	float rotationX = 0F;
 
 	void Update ()
 	{
@@ -59,5 +63,11 @@ public class MouseLook : MonoBehaviour {
 		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
+	}
+	void FixedUpdate(){
+		rot = transform.localEulerAngles;
+		direction = new Vector3(Mathf.Cos(rot.y) * Mathf.Sin(rot.x), Mathf.Sin(rot.y), Mathf.Cos(rot.y) * Mathf.Cos(rot.x));
+		print (rot);
+		print (direction + " Q");
 	}
 }
