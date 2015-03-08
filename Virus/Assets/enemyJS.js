@@ -3,8 +3,8 @@
 var target : Transform; //the enemy's target
  var moveSpeed = 3; //move speed
  var rotationSpeed = 3; //speed of turning
- var range : float=10f;
- var range2 : float=10f;
+ var range : float=1000f;
+ var range2 : float=1000f;
  var stop : float=0;
  var myTransform : Transform; //current transform data of this enemy
  function Awake()
@@ -38,6 +38,12 @@ var target : Transform; //the enemy's target
      myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
      Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
      }
-     
-  
  }
+ 
+ function OnCollisionEnter (col : Collision)
+{
+    if(col.gameObject.name == "First Person Controller")
+    {
+        Destroy(gameObject);
+    }
+}
