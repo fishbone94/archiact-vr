@@ -49,6 +49,7 @@
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
      <Compile Include="Assets\MoverC#.cs" />
      <Compile Include="Assets\enemyManager.cs" />
+     <Compile Include="Assets\playerHealth.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Hippo/archiact-vr/Virus/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>

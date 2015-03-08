@@ -49,6 +49,7 @@
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
      <Compile Include="Assets\MoverC#.cs" />
      <Compile Include="Assets\enemyManager.cs" />
+     <Compile Include="Assets\playerHealth.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
