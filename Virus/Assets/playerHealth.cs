@@ -5,8 +5,8 @@ public class playerHealth : MonoBehaviour {
 	public int startingHealth = 100;
 	public int currentHealth;
 
-	bool isDead = false;
-	bool damaged = false;
+	public bool isDead = false;
+	public bool damaged = false;
 
 	void Awake () {
 		currentHealth = startingHealth;
@@ -28,7 +28,7 @@ public class playerHealth : MonoBehaviour {
 	
 	void OnCollisionEnter (Collision col) {
 		if (col.gameObject.tag == "Enemy") {
-			takeDamage(5);
+			takeDamage(20);
 		}
 	}
 }

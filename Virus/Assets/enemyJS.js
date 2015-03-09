@@ -7,6 +7,7 @@ var target : Transform; //the enemy's target
  var range2 : float=1000f;
  var stop : float=0;
  var myTransform : Transform; //current transform data of this enemy
+ var enemyHealth : int = 50;
  function Awake()
  {
      myTransform = transform; //cache transform data for easy access/preformance
@@ -42,7 +43,7 @@ var target : Transform; //the enemy's target
  
  function OnCollisionEnter (col : Collision)
 {
-    if(col.gameObject.name == "First Person Controller")
+    if(col.gameObject.name == "First Person Controller" || enemyHealth <= 0)
     {
         Destroy(gameObject);
     }

@@ -4,8 +4,7 @@ public class enemyManager : MonoBehaviour
 {
 	public GameObject enemy;                
 	public float spawnTime = 3f;            
-	public Transform[] spawnPoints;         
-	public int health = 100;
+	public Transform[] spawnPoints;
 	
 	void Start ()
 	{
@@ -16,9 +15,9 @@ public class enemyManager : MonoBehaviour
 	
 	void Spawn ()
 	{
-		// If the player has no health left...
-		if(health <= 0)
-		{
+		GameObject player = GameObject.FindGameObjectWithTag("Player");
+		if (player.GetComponent<playerHealth>().isDead == true) {
+			// If the player has no health left...
 			// ... exit the function.
 			return;
 		}
