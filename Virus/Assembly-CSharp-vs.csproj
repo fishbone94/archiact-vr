@@ -47,8 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
-     <Compile Include="Assets\MoverC#.cs" />
-     <Compile Include="Assets\MoverCSharp.cs" />
      <Compile Include="Assets\enemyManager.cs" />
      <Compile Include="Assets\playerHealth.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
