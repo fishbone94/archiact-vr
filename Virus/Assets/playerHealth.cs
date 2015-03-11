@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class playerHealth : MonoBehaviour {
 	public int startingHealth = 100;
 	public int currentHealth;
+	public Slider healthSlider;
 
 	public bool isDead = false;
-	public bool damaged = false;
 
 	void Awake () {
 		currentHealth = startingHealth;
@@ -14,8 +15,8 @@ public class playerHealth : MonoBehaviour {
 
 	//just code for later use
 	public void takeDamage (int amount) {
-		damaged = true;
 		currentHealth -= amount;
+		healthSlider.value = currentHealth;
 
 		if (currentHealth <= 0 && !isDead) {
 			death();

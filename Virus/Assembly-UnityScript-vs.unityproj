@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{EAD29086-7071-3560-4C11-4B0AB268FA89}</ProjectGuid>
+	<ProjectGuid>{8DC7A591-8421-6DED-B004-4E1394102B72}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,12 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
-     <Compile Include="Assets\enemyHealth.cs" />
-     <Compile Include="Assets\enemyManager.cs" />
-     <Compile Include="Assets\enemyMovement.cs" />
-     <Compile Include="Assets\playerHealth.cs" />
-     <Compile Include="Assets\playerShooting.cs" />
+     <Compile Include="Assets\Dive\DiveFPSController.js" />
+     <Compile Include="Assets\Dive\splashscreen.js" />
+     <Compile Include="Assets\Gun.js" />
+     <Compile Include="Assets\Old code\enemyJS.js" />
+     <Compile Include="Assets\TestPathing1.js" />
+     <Compile Include="Assets\TestPathing2.js" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Hippo/archiact-vr/Virus/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
