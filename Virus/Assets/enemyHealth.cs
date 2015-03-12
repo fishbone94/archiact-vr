@@ -6,15 +6,20 @@ public class enemyHealth : MonoBehaviour {
 	public int currentHealth;                   // The current health the enemy has.
 	public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
 	public int scoreValue = 10;                 // The amount added to the player's score when the enemy dies.
+	public int damage = 20;
 	
 	BoxCollider boxCollider;            // Reference to the capsule collider.
 	bool isDead;                                // Whether the enemy is dead.
+	GameObject player;
+	playerHealth playerHealth;
 	
 	
 	void Awake ()
 	{
 		boxCollider = GetComponent <BoxCollider> ();
 		currentHealth = startingHealth;
+		player = GameObject.FindGameObjectWithTag ("Player");
+		playerHealth = player.GetComponent<playerHealth> ();
 	}
 
 	public void TakeDamage (int amount, Vector3 hitPoint)
@@ -45,5 +50,11 @@ public class enemyHealth : MonoBehaviour {
 		boxCollider.isTrigger = true;
 
 		Destroy (gameObject);
+	}
+
+	void OnCollisionEnter (Collision col) {
+		if (col.gameObject.name == "First Person Controller") {
+			playerHealth.takeDamage(damage);
+		}
 	}
 }

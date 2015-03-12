@@ -26,10 +26,4 @@ public class playerHealth : MonoBehaviour {
 	public void death() {
 		isDead = true;
 	}
-	
-	void OnCollisionEnter (Collision col) {
-		if (col.gameObject.tag == "Enemy") {
-			takeDamage(20);
-		}
-	}
 }

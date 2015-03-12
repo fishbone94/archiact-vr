@@ -14,6 +14,8 @@ public class playerShooting : MonoBehaviour
 	LineRenderer gunLine;                           // Reference to the line renderer.
 	Light gunLight;                                 // Reference to the light component.
 	float effectsDisplayTime = 0.2f;                // The proportion of the timeBetweenBullets that the effects will display for.
+	disableTimer disableShooting;
+	GameObject player;
 	
 	void Awake ()
 	{
@@ -24,6 +26,9 @@ public class playerShooting : MonoBehaviour
 		gunParticles = GetComponent<ParticleSystem> ();
 		gunLine = GetComponent <LineRenderer> ();;
 		gunLight = GetComponent<Light> ();
+
+		player = GameObject.FindGameObjectWithTag ("Player");
+		disableShooting = player.GetComponent<disableTimer> ();
 	}
 	
 	void Update ()
@@ -31,8 +36,8 @@ public class playerShooting : MonoBehaviour
 		// Add the time since Update was last called to the timer.
 		timer += Time.deltaTime;
 		
-		// If the Fire1 button is being press and it's time to fire...
-		if(Input.GetButton ("Fire2") && timer >= timeBetweenBullets)
+		// If the Fire2 button is being press and it's time to fire...
+		if(Input.GetButton ("Fire2") && timer >= timeBetweenBullets && disableShooting.disabled == false)
 		{
 			// ... shoot the gun.
 			Shoot ();
