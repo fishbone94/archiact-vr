@@ -7,13 +7,13 @@ public class enemyHealth : MonoBehaviour {
 	public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
 	public int scoreValue = 10;                 // The amount added to the player's score when the enemy dies.
 	
-	CapsuleCollider capsuleCollider;            // Reference to the capsule collider.
+	BoxCollider boxCollider;            // Reference to the capsule collider.
 	bool isDead;                                // Whether the enemy is dead.
 	
 	
 	void Awake ()
 	{
-		capsuleCollider = GetComponent <CapsuleCollider> ();
+		boxCollider = GetComponent <BoxCollider> ();
 		currentHealth = startingHealth;
 	}
 
@@ -42,7 +42,7 @@ public class enemyHealth : MonoBehaviour {
 		isDead = true;
 		
 		// Turn the collider into a trigger so shots can pass through it.
-		capsuleCollider.isTrigger = true;
+		boxCollider.isTrigger = true;
 
 		Destroy (gameObject);
 	}

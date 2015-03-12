@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WormPathing1.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\enemyHealth.cs">
     <Files>
-      <File FileName="Virus.sln" Line="58" Column="1" />
+      <File FileName="Virus.sln" Line="1" Column="1" />
       <File FileName="Assets\playerHealth.cs" Line="1" Column="1" />
       <File FileName="Assets\enemyManager.cs" Line="1" Column="1" />
       <File FileName="Assets\enemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\enemyHealth.cs" Line="20" Column="40" />
+      <File FileName="Assets\enemyHealth.cs" Line="50" Column="3" />
       <File FileName="Assets\playerShooting.cs" Line="1" Column="1" />
-      <File FileName="Assets\WormPathing2.js" Line="28" Column="3" />
+      <File FileName="Assets\WormPathing2.js" Line="1" Column="1" />
       <File FileName="Assets\WormPathing1.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
