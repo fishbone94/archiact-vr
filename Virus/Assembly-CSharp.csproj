@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
      <Compile Include="Assets\disableTimer.cs" />
+     <Compile Include="Assets\enemyAura.cs" />
      <Compile Include="Assets\enemyHealth.cs" />
      <Compile Include="Assets\enemyManager.cs" />
      <Compile Include="Assets\enemyMovement.cs" />

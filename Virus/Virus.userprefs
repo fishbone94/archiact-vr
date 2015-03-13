@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\playerShooting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\enemyAura.cs">
     <Files>
-      <File FileName="Assets\disableTimer.cs" Line="22" Column="28" />
-      <File FileName="Assets\playerShooting.cs" Line="38" Column="3" />
+      <File FileName="Assets\SpywarePathing.js" Line="28" Column="3" />
+      <File FileName="Assets\disableTimer.cs" Line="1" Column="1" />
+      <File FileName="Assets\playerShooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemyManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemyAura.cs" Line="10" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

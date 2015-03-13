@@ -8,7 +8,6 @@
  var timeToTravel : float = 10.0;                //The total time it takes to move from start- to end position
  var y : float = 10.0;
  
- 
  function Start(){
  MoveToPosition();
  }
