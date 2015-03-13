@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
 
- 
- var startPosition : Vector3 = Vector3(0, 0, 25);    //The starting position in world space
+ var startPosition : Vector3;
+ startPosition =  GameObject.FindGameObjectWithTag("Worm").transform.position;    //The starting position in world space
  var endPosition : Vector3 = Vector3(0,0,-25);    //The ending position in world space
  var bending : Vector3 = Vector3.up;                //Bend factor (on all axes)
  var timeToTravel : float = 5.0;                //The total time it takes to move from start- to end position

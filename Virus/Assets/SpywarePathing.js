@@ -2,7 +2,8 @@
  var speed : int = 2;
  var hightDiv : int = 150;
  var t : float; 
- var startPosition : Vector3 = Vector3(-10,0,0);    //The starting position in world space
+ var startPosition : Vector3;
+ startPosition =  GameObject.FindGameObjectWithTag("Spyware").transform.position;    //The starting position in world space
  var endPosition : Vector3 = Vector3(10,0,0);    //The ending position in world space
  var bending : Vector3 = Vector3.up;                //Bend factor (on all axes)
  var timeToTravel : float = 10.0;                //The total time it takes to move from start- to end position
