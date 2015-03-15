@@ -58,6 +58,7 @@ public class WormHealth1 : MonoBehaviour {
 	void OnCollisionEnter (Collision col) {
 		if (col.gameObject.name == "First Person Controller") {
 			playerHealth.takeDamage(damage);
+			Destroy(gameObject);
 		}
 	}
 	

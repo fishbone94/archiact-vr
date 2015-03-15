@@ -1,8 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpywarePathing.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WormPathing2.js">
     <Files>
-      <File FileName="Assets\SpywarePathing.js" Line="19" Column="25" />
+      <File FileName="Assets\WormPathing2.js" Line="1" Column="1" />
+      <File FileName="Assets\WormHealth1.cs" Line="1" Column="1" />
+      <File FileName="Assets\SpywarePathing.js" Line="1" Column="1" />
+      <File FileName="Assets\enemyHealth.cs" Line="18" Column="53" />
+      <File FileName="Assets\playerShooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\disableTimer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
