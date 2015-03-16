@@ -50,12 +50,12 @@
      <Compile Include="Assets\WormHealth1.cs" />
      <Compile Include="Assets\WormHealth2.cs" />
      <Compile Include="Assets\disableTimer.cs" />
-     <Compile Include="Assets\enemyAura.cs" />
      <Compile Include="Assets\enemyHealth.cs" />
      <Compile Include="Assets\enemyManager.cs" />
      <Compile Include="Assets\enemyMovement.cs" />
      <Compile Include="Assets\playerHealth.cs" />
      <Compile Include="Assets\playerShooting.cs" />
+     <Compile Include="Assets\spywareAura.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
