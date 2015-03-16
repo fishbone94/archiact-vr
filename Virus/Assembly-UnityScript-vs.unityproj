@@ -49,6 +49,7 @@
      <Compile Include="Assets\Bullet.js" />
      <Compile Include="Assets\Dive\DiveFPSController.js" />
      <Compile Include="Assets\Dive\splashscreen.js" />
+     <Compile Include="Assets\Firewall.js" />
      <Compile Include="Assets\Gun.js" />
      <Compile Include="Assets\Old code\enemyJS.js" />
      <Compile Include="Assets\SpywarePathing.js" />
@@ -57,7 +58,7 @@
      <Compile Include="Assets\WormPathingLmao.js" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/FishBonE/archiact-vr/Virus/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/SkyZero/Desktop/New folder (4)/archiact-vr/Virus/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>

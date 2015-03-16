@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
+     <Compile Include="Assets\FirewallTrigger.cs" />
      <Compile Include="Assets\WormHealth1.cs" />
      <Compile Include="Assets\WormHealth2.cs" />
      <Compile Include="Assets\disableTimer.cs" />
