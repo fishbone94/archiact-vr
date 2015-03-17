@@ -52,7 +52,9 @@
      <Compile Include="Assets\Firewall.js" />
      <Compile Include="Assets\Gun.js" />
      <Compile Include="Assets\Old code\enemyJS.js" />
+     <Compile Include="Assets\SeaCleaner.js" />
      <Compile Include="Assets\SpywarePathing.js" />
+     <Compile Include="Assets\WindowsDefender.js" />
      <Compile Include="Assets\WormPathing1.js" />
      <Compile Include="Assets\WormPathing2.js" />
      <Compile Include="Assets\WormPathingLmao.js" />

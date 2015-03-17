@@ -14,6 +14,12 @@ public class enemyHealth : MonoBehaviour {
 	GameObject player;
 	playerHealth playerHealth;
 
+	public GameObject Firewall;
+	public GameObject SeaCleaner;
+	public GameObject WindowsDefenderFront;
+	public GameObject WindowsDefenderRight;
+	public GameObject WindowsDefenderLeft;
+
 	public GameObject worm2;
 	float timer = 0.5f;					// timing second worm spawn
 
@@ -55,7 +61,9 @@ public class enemyHealth : MonoBehaviour {
 	{
 		// The enemy is dead.
 		isDead = true;
-		
+		FirewallTrigger ();
+		SeaCleanerTrigger ();
+		WindowsDefenderTrigger ();
 		// Turn the collider into a trigger so shots can pass through it.
 		boxCollider.isTrigger = true;
 		Destroy (gameObject, timerDeath);
@@ -75,6 +83,26 @@ public class enemyHealth : MonoBehaviour {
 		if (timerDeath > 0 && timer <= 0f) {
 			Instantiate (worm2);
 			timer = 0.6f;
+		}
+	}
+	void FirewallTrigger(){
+				if (gameObject.name == "FirewallTrigger") {
+			Instantiate (Firewall);
+
+				}
+		}
+
+	void SeaCleanerTrigger(){
+		if (gameObject.name == "SeaCleanerTrigger") {
+			Instantiate (SeaCleaner);
+			
+		}
+	}
+	void WindowsDefenderTrigger(){
+		if (gameObject.name == "WindowsDefenderTrigger") {
+			Instantiate (WindowsDefenderFront);
+			Instantiate (WindowsDefenderRight);
+			Instantiate (WindowsDefenderLeft);			
 		}
 	}
 }
