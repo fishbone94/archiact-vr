@@ -20,7 +20,7 @@ public class enemyMovement : MonoBehaviour {
 
 	void Update() {
 		float distance = Vector3.Distance (myTransform.position, target.position);
-
+		transform.position = new Vector3(transform.position.x, Mathf.Sin(Time.time * 3)/2, transform.position.z);
 		if (distance <= range2 && distance >= range) {
 			myTransform.rotation = Quaternion.Slerp (myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
 		} else if (distance <= range && distance > stop) {
