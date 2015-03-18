@@ -25,5 +25,6 @@ public class playerHealth : MonoBehaviour {
 
 	public void death() {
 		isDead = true;
+		Application.LoadLevel ("GGdotexe");
 	}
 }
