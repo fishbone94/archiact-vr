@@ -13,16 +13,16 @@ public class enemyHealth : MonoBehaviour {
 	bool isDead;                                // Whether the enemy is dead.
 	GameObject player;
 	playerHealth playerHealth;
-
+	
 	public GameObject Firewall;
 	public GameObject SeaCleaner;
 	public GameObject WindowsDefenderFront;
 	public GameObject WindowsDefenderRight;
 	public GameObject WindowsDefenderLeft;
-
+	
 	public GameObject worm2;
 	float timer = 0.5f;					// timing second worm spawn
-
+	
 	void Awake ()
 	{
 		boxCollider = GetComponent <BoxCollider> ();
@@ -30,14 +30,14 @@ public class enemyHealth : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent<playerHealth> ();
 	}
-
+	
 	void Update() {
 		if (currentHealth <= 0) {
 			Split ();
 			timer -= Time.deltaTime;
 		}
 	}
-
+	
 	public void TakeDamage (int amount, Vector3 hitPoint)
 	{
 		// If the enemy is dead...
@@ -47,7 +47,7 @@ public class enemyHealth : MonoBehaviour {
 		
 		// Reduce the current health by the amount of damage sustained.
 		currentHealth -= amount;
-
+		
 		// If the current health is less than or equal to zero...
 		if(currentHealth <= 0)
 		{
@@ -56,26 +56,25 @@ public class enemyHealth : MonoBehaviour {
 		}
 	}
 	
-	
 	void Death ()
 	{
 		// The enemy is dead.
 		isDead = true;
+		// Turn the collider into a trigger so shots can pass through it.
+		boxCollider.isTrigger = true;
 		FirewallTrigger ();
 		SeaCleanerTrigger ();
 		WindowsDefenderTrigger ();
-		// Turn the collider into a trigger so shots can pass through it.
-		boxCollider.isTrigger = true;
 		Destroy (gameObject, timerDeath);
 	}
-
+	
 	void OnCollisionEnter (Collision col) {
 		if (col.gameObject.tag == "Player") {
 			playerHealth.takeDamage(damage);
 			Destroy(gameObject);
 		}
 	}
-
+	
 	void Split(){
 		if (timerDeath > 0 && timer == 0.5f) {
 			Instantiate (worm2);
@@ -86,20 +85,19 @@ public class enemyHealth : MonoBehaviour {
 		}
 	}
 	void FirewallTrigger(){
-				if (gameObject.name == "FirewallTrigger") {
+		if (gameObject.tag == "FirewallTrigger") {
 			Instantiate (Firewall);
-
-				}
 		}
-
+	}
+	
 	void SeaCleanerTrigger(){
-		if (gameObject.name == "SeaCleanerTrigger") {
+		if (gameObject.tag == "SeaCleanerTrigger") {
 			Instantiate (SeaCleaner);
 			
 		}
 	}
 	void WindowsDefenderTrigger(){
-		if (gameObject.name == "WindowsDefenderTrigger") {
+		if (gameObject.tag == "WindowsDefenderTrigger") {
 			Instantiate (WindowsDefenderFront);
 			Instantiate (WindowsDefenderRight);
 			Instantiate (WindowsDefenderLeft);			
