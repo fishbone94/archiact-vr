@@ -7,6 +7,7 @@ public class enemyHealth : MonoBehaviour {
 	public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
 	public int scoreValue = 10;                 // The amount added to the player's score when the enemy dies.
 	public int damage = 20;
+	public int halfLife = 10;
 	public float timerDeath = 0f;				// timer for worm death
 	
 	BoxCollider boxCollider;            // Reference to the capsule collider.

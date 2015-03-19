@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Defender : MonoBehaviour {
+	enemyHealth enemyHealth;
 	public float deathTimer = 5f;
 
 	// Use this for initialization
@@ -11,6 +12,5 @@ public class Defender : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }
