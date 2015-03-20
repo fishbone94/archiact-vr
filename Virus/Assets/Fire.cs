@@ -38,14 +38,10 @@ public class Fire : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Enemy") {
-			foreach(GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy")) {
-				enemy.GetComponent<enemyHealth>().TakeDamage(fireDamage, fire.transform.position);
-			}
+			col.gameObject.GetComponent<enemyHealth>().TakeDamage(fireDamage, fire.transform.position);
 		}
 		if (col.gameObject.tag == "Worm") {
-			foreach(GameObject enemy in GameObject.FindGameObjectsWithTag("Worm")) {
-				enemy.GetComponent<enemyHealth>().TakeDamage(fireDamage, fire.transform.position);
-			}
+			col.gameObject.GetComponent<enemyHealth>().TakeDamage(fireDamage, fire.transform.position);
 		}
 		if (col.gameObject.tag != "Enemy" || col.gameObject.tag != "Worm" && timer == 0.1f) {
 			touch = true;

@@ -11,6 +11,7 @@ public class playerHealth : MonoBehaviour {
 
 	void Awake () {
 		currentHealth = startingHealth;
+		Application.targetFrameRate = 60;
 	}
 
 	//just code for later use
