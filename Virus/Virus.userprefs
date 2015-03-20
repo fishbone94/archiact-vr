@@ -1,7 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\playerShooting.cs">
     <Files>
+      <File FileName="Assets\scoreCounter.cs" Line="17" Column="2" />
       <File FileName="Assets\playerShooting.cs" Line="65" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
