@@ -17,6 +17,8 @@ public class playerShooting : MonoBehaviour
 	float effectsDisplayTime = 0.2f;                // The proportion of the timeBetweenBullets that the effects will display for.
 	disableTimer disableShooting;
 	GameObject player;
+	private static CardboardManager cardboard;
+	bool fire;
 	
 	void Awake ()
 	{
@@ -31,6 +33,21 @@ public class playerShooting : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag ("Player");
 		disableShooting = player.GetComponent<disableTimer> ();
 	}
+
+	void Start() {
+		cardboard = GameObject.Find("CardboardInputManager").GetComponent<CardboardManager>();
+		cardboard.OnMagnetDown += CardboardDown;  // When the magnet goes down
+		cardboard.OnMagnetUp += CardboardUp;		//when magnet goes up
+
+	}
+
+	public void CardboardDown(object sender, CardboardEvent cardboardEvent) {
+		fire = true;
+	}
+	
+	public void CardboardUp(object sender, CardboardEvent cardboardEvent) {
+		fire = false;
+	}
 	
 	void Update ()
 	{
@@ -38,7 +55,7 @@ public class playerShooting : MonoBehaviour
 		timer += Time.deltaTime;
 		
 		// If the Fire2 button is being press and it's time to fire...
-		if(Input.GetButton ("Fire2") && timer >= timeBetweenBullets && disableShooting.disabled == false)
+		if(fire && timer >= timeBetweenBullets && disableShooting.disabled == false)
 		{
 			// ... shoot the gun.
 			Shoot ();
