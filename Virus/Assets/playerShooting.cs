@@ -5,6 +5,7 @@ public class playerShooting : MonoBehaviour
 	public int damagePerShot = 20;                  // The damage inflicted by each bullet.
 	public float timeBetweenBullets = 0.15f;        // The time between each shot.
 	public float range = 1000f;                      // The distance the gun can fire.
+	public AudioClip Laser;							//Laser Audio
 	
 	float timer;                                    // A timer to determine when to fire.
 	Ray shootRay;                                   // A ray from the gun end forwards.
@@ -60,6 +61,9 @@ public class playerShooting : MonoBehaviour
 	
 	void Shoot ()
 	{
+		//Play Laser Audio
+		AudioSource.PlayClipAtPoint (Laser, transform.position, 0.5f);
+
 		// Reset the timer.
 		timer = 0f;
 		
