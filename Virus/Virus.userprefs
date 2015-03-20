@@ -1,13 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlasmaShield.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\startGame.cs">
     <Files>
-      <File FileName="Assets\Fire.cs" Line="49" Column="4" />
+      <File FileName="Assets\playerShooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\Fire.cs" Line="1" Column="1" />
       <File FileName="Assets\CardboardTriggerControlMono.cs" Line="1" Column="1" />
       <File FileName="Assets\CardboardMagnetSensor.cs" Line="1" Column="1" />
       <File FileName="Assets\WindowsDefender.js" Line="1" Column="1" />
-      <File FileName="Assets\enemyHealth.cs" Line="10" Column="27" />
+      <File FileName="Assets\enemyHealth.cs" Line="1" Column="1" />
       <File FileName="Assets\PlasmaShield.cs" Line="20" Column="57" />
+      <File FileName="Assets\menu.cs" Line="1" Column="1" />
+      <File FileName="Assets\retry.cs" Line="1" Column="1" />
+      <File FileName="Assets\startGame.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
