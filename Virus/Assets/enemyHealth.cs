@@ -17,7 +17,6 @@ public class enemyHealth : MonoBehaviour {
 	
 	public GameObject Firewall;
 	public GameObject SeaCleaner;
-	public GameObject WindowsDefenderFront;
 	public GameObject WindowsDefenderRight;
 	public GameObject WindowsDefenderLeft;
 	
@@ -99,7 +98,6 @@ public class enemyHealth : MonoBehaviour {
 	}
 	void WindowsDefenderTrigger(){
 		if (gameObject.tag == "WindowsDefenderTrigger") {
-			Instantiate (WindowsDefenderFront);
 			Instantiate (WindowsDefenderRight);
 			Instantiate (WindowsDefenderLeft);			
 		}
