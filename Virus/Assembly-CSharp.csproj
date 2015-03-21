@@ -59,6 +59,7 @@
      <Compile Include="Assets\PlasmaShield.cs" />
      <Compile Include="Assets\WormHealth1.cs" />
      <Compile Include="Assets\WormHealth2.cs" />
+     <Compile Include="Assets\WormPathing3.cs" />
      <Compile Include="Assets\disableTimer.cs" />
      <Compile Include="Assets\enemyHealth.cs" />
      <Compile Include="Assets\enemyManager.cs" />

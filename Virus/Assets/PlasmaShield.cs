@@ -17,8 +17,6 @@ public class PlasmaShield : MonoBehaviour {
 		if (col.gameObject.tag == "Enemy" && defender!= null) {
 			col.gameObject.GetComponent<enemyHealth>().damage -= col.gameObject.GetComponent<enemyHealth>().halfLife;
 		}
-		if (col.gameObject.tag == "Worm" && defender!= null) {
-			col.gameObject.GetComponent<enemyHealth>().damage -= col.gameObject.GetComponent<enemyHealth>().halfLife;
-		}
+
 	}
 }

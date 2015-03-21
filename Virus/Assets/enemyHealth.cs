@@ -77,10 +77,10 @@ public class enemyHealth : MonoBehaviour {
 	
 	void Split(){
 		if (timerDeath > 0 && timer == 0.5f) {
-			Instantiate (worm2);
+			Instantiate (worm2,transform.position,transform.rotation);
 		}
 		if (timerDeath > 0 && timer <= 0f) {
-			Instantiate (worm2);
+			Instantiate (worm2,transform.position,transform.rotation);
 			timer = 0.6f;
 		}
 	}
