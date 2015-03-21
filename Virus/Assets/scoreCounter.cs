@@ -19,6 +19,6 @@ public class scoreCounter : MonoBehaviour {
 	void Update () {
 		frameCount++;
 		scoreCount = frameCount / 60;
-		text.text = "Score: " + scoreCount;
+		text.text = "Time : " + scoreCount;
 	}
 }
