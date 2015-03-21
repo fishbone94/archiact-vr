@@ -2,22 +2,37 @@
 
 public class enemyManager : MonoBehaviour
 {
-	public GameObject[] enemy;                
-	public float spawnTime = 3f;            
+	public GameObject[] enemy; 
+	public float spawnStartTimer = 3f;
+	public float spawnTime;          
 	public Transform[] spawnPoints;
-	public float level = 0;
-
+	public float level = 2;
+	
+	
+	void Awake() {
+		spawnTime = spawnStartTimer;
+	}
+	
 	void Start ()
 	{
 		// Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
-		InvokeRepeating ("Spawn", spawnTime, spawnTime);
+		//InvokeRepeating ("Spawn", spawnTime, spawnTime);
 		InvokeRepeating ("levelCounter", 0f, 30f);
 	}
 	
-	void levelCounter() {
-		level += 1.25f;
-		spawnTime = level*spawnTime;
+	void Update() {
+		spawnTime -= Time.deltaTime;
+		if (spawnTime <= 0f) {
+			Spawn();
+			spawnTime = spawnStartTimer;
+		}
 	}
+	
+	void levelCounter() {
+		level += 1.005f;
+		spawnStartTimer = (1-(level*0.1f))*spawnStartTimer;
+	}
+	
 	void Spawn ()
 	{
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
