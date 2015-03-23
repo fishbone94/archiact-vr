@@ -1,13 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scoreCounter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\playerShooting.cs">
     <Files>
-      <File FileName="Assets\faq2.cs" Line="24" Column="1" />
+      <File FileName="Assets\playerShooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\faq2.cs" Line="1" Column="1" />
       <File FileName="Assets\enemyManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\faq.cs" Line="24" Column="1" />
+      <File FileName="Assets\faq.cs" Line="1" Column="1" />
       <File FileName="Assets\Fire.cs" Line="1" Column="1" />
       <File FileName="Assets\Dive\splashscreen.js" Line="1" Column="1" />
-      <File FileName="Assets\scoreCounter.cs" Line="24" Column="2" />
+      <File FileName="Assets\scoreCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemyHealth.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
